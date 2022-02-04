@@ -11,16 +11,16 @@
 ## Bikeshare Analysis Results:
 
 ### Converting tripduration from int64 to datetime:
-* Using Python and Pandas functions, we create a jupyter notebook [NYC_Citibike_Challenge]() we convert the "tripduration" column from an integer to a datetime datatype to get the time in hours, minutes, and seconds (00:00:00) and create a new column called sec_tripduration, then export the DataFrame as a CSV file as[new201908_citibike_tripdata](). Later the sec_tripduration is renamed in tripduration in HMS inside tableau.
+* Using Python and Pandas functions, we create a jupyter notebook [NYC_Citibike_Challenge](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/NYC_Citibike_Challenge.ipynb) we convert the "tripduration" column from an integer to a datetime datatype to get the time in hours, minutes, and seconds (00:00:00) and create a new column called sec_tripduration, then export the DataFrame as a CSV file new201908_citibike_tripdata. Later the sec_tripduration is renamed in tripduration in HMS inside tableau.
 
 Your final results should look similar to the following image:
-[sec_trioduration]()
+![sec_tripduration](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/sec%20_tripduration.png?raw=true)
 
 
 The data in the "tripduration" column is converted to a datetime datatype and has the correct time format.
 The DataFrame is exported as a new file without the index column.
 
-Next, we use tableau to connect csv file and start making visualizations. The visualizations can be viewed at [Bike sharing](https://public.tableau.com/app/profile/sucharita.bhattcharjee/viz/Bikesharing_16440041248210/BikeshareStory?publish=yes)
+Next, we use tableau to connect csv file and start making visualizations. The visualizations can be viewed in tableau public as  [Bike sharing](https://public.tableau.com/app/profile/sucharita.bhattcharjee/viz/Bikesharing_16440041248210/BikeshareStory?publish=yes)
 ### Average trip duration by age:
 * Area charts in Tableau are essentially line charts that are filled in below the line. we will make one by dragging the Birth Year dimension into the Columns section, and the Tripduration measure into the Rows section. 
 
@@ -28,48 +28,48 @@ Next, we use tableau to connect csv file and start making visualizations. The vi
 
 * We can infer that young people tend to ride for more time on the basis of this data.
 
-![avg_trip_duration_by_age](?raw=true)
+![avg_trip_duration_by_age](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/avg_trip_duration_by_age.png?raw=true)
 
 ### Peak Hours August
 * Bar charts help us to compare the hours, we'll put  at the "Starttime" dimension, as this is a good indicator of when customers tend to begin their bike rides in  "Rows" section. We will put the generated field, count of tripdata in columns.
 * August can be a good month to visit New York City,so the peak hours for bike trips during the month of August will help our investors get a ballpark estimate of how many bikes we might need in Des Moines.
 * We can infer that peak hours can be 8AM to 10AM and 5PM to 7PM. So, this might be people going or coming back from work.
 
-![peak_hours_august](?raw=true)
+![peak_hours_august](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/peak_hours_august.png?raw=true)
 
 ### Checkout Times for Users
 * There is a line graph displaying the number of bikes checked out by duration for all users, and the graph can be filtered by the hour. It clould be filtered by the hour.
 * This will help us know the average trip duration for the most number of trips that were done. 
 * We can infer that most of the bikes were checked out for a duration of 20 mins or less. There is some demand till 40 mins and hardly much after an hour.
 
-![checkout_times_for_users](?raw=true)
+![checkout_times_for_users](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/checkout_times_for_users.png?raw=true)
 
 ### Checkout Times by Gender
 * There is a line graph displaying the number of bikes that are checked out by duration for each gender by the hour, and the graph can be filtered by the hour and gender.
 * This will help us know who made the most number of trips by the hour males, females or unknown.
 *  We can infer that most of the bikes were checked out predominantly by males then females and least by unknown. 
 
-![checkout_times_by_gender](?raw=true)
+![checkout_times_by_gender](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/checkout_times_by_gender.png?raw=true)
 
 ### Trips by Weekday for each Hour
 * A heatmap is created showing the number of bike trips for each hour of each day of the week.
 * This will help us to know which days in the week and hours of the week are the busiest and bike utilization is highest.
 * We can infer that most of the bikes were checked out on thursday, followed by Tuesday and Monday. 
 
-![trips_by_weekday_for_each_hour](?raw=true)
+![trips_by_weekday_for_each_hour](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/trips_by_weekday_for_each_hour.png?raw=true)
 
 ### Trips by Gender (Weekday per Hour)
 * A heatmap is created showing the number of bike trips by gender for each hour of each day of the week, and the heatmap can be filtered by gender.
 * This will help us know which gender needs the most bikes on days of week as well as hours in a day.
 * We can infer that the demand for bikes is highest on Thursdays, followed by Tuesday and Monday by the males and is generally not very high for females or unknown on any of the days.
  
-![trips_by_gender](?raw=true)
+![trips_by_gender](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/trips_by_gender.png?raw=true)
 ### User Trips by Gender (Weekday per Hour)
 * A heatmap is created showing the number of bike trips for each type of user and gender for each day of the week, and you can only filter by user and gender.
 * This will help us know how does the demand for bike vary between subscribers and customers.
 * We can infer that the demand is higher by subscribers in case of males and females but less for the unknown.
 
-![usertrips_by_gender](?raw=true)
+![usertrips_by_gender](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/usertrips_by_gender.png?raw=true)
 
 ## Summary of Bikeshare Analysis:
 The Bikeshare Analysis can be summarized as follows:
@@ -88,13 +88,13 @@ The Bikeshare Analysis can be summarized as follows:
 
 1. Top stations based on Age.
 * We put an additional Map layer with data layer as Age to find out the age of people in zipcodes near the Top starting stations.
-* We can infer that Top starting stations are areas with zipcode belonging to people less than 40.
+* We can infer that Top starting stations i.e. areas with biggest dots are areas with zipcode belonging to people less than 40.
 
-![top_start_station_age](?raw=true)
+![top_start_station_age](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/top_start_station_age.png?raw=true)
 
 2. Top stations based on Population.
 * We put an additional Map layer with data layer as Age to find out the population density of zipcodes near the Top starting stations.
-* We can infer that Top starting stations are areas with zipcode having more than 18000 people.
+* We can infer that Top starting stations i.e. areas with biggest dots are areas with zipcode having more than 18000 people.
 
-![top_start_station_population](?raw=true)
+![top_start_station_population](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/Resources/images/top_start_station_population.png?raw=true)
 
