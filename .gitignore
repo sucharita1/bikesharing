@@ -1,3 +1,6 @@
+# Ignore csv files greater than 100 MB
+201908-citibike-tripdata.csv
+new201908_citibike_tripdata.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
