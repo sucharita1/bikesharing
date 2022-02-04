@@ -20,7 +20,7 @@ Your final results should look similar to the following image:
 The data in the "tripduration" column is converted to a datetime datatype and has the correct time format.
 The DataFrame is exported as a new file without the index column.
 
-Next, we use tableau to connect [new201908_citibike_tripdata]() csv file and start making visualizations.
+Next, we use tableau to connect csv file and start making visualizations. The visualizations can be viewed at [Bike sharing](https://public.tableau.com/app/profile/sucharita.bhattcharjee/viz/Bikesharing_16440041248210/BikeshareStory?publish=yes)
 ### Average trip duration by age:
 * Area charts in Tableau are essentially line charts that are filled in below the line. we will make one by dragging the Birth Year dimension into the Columns section, and the Tripduration measure into the Rows section. 
 
