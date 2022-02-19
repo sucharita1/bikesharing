@@ -10,6 +10,10 @@
 
 ## Bikeshare Analysis Results:
 
+The NYC bikeshare Analysis results can be viewed in Tableau. A snapshot for the same is 
+
+![NYC Bikeshare Story](https://github.com/sucharita1/bikesharing/blob/a8b79029f920b42987cbdfad0bf8a5cad29f87c9/Resources/images/NYC%20Bikeshare%20Analysis.png?raw=true)
+
 ### Converting tripduration from int64 to datetime:
 * Using Python and Pandas functions, we create a jupyter notebook [NYC_Citibike_Challenge](https://github.com/sucharita1/bikesharing/blob/8bdd523125de76358ea5eefb2f3bce610eed3f91/NYC_Citibike_Challenge.ipynb) we convert the "tripduration" column from an integer to a datetime datatype to get the time in hours, minutes, and seconds (00:00:00) and create a new column called sec_tripduration, then export the DataFrame as a CSV file new201908_citibike_tripdata. Later the sec_tripduration is renamed in tripduration in HMS inside tableau.
 
